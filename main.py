@@ -20,8 +20,9 @@ def generate_music():
         midi.addNote(channel, 0, pitch, start_time, duration, volume)
         start_time += duration  # Move to the next beat for the next note
 
-    # Save the MIDI file
-    with open("output.mid", "wb") as midi_file:
+    # Save the MIDI file with a dynamic name
+    output_file_name = "output_{}.mid".format(channel)
+    with open(output_file_name, "wb") as midi_file:
         midi.writeFile(midi_file)
 
 if __name__ == "__main__":
