@@ -35,4 +35,3 @@ The script will generate a MIDI file named `output_channel_0.mid` in the same di
 - **Note Range:** Experiment with the starting pitch and the range of notes to achieve the desired musical output.
 
 - **Output File Name:** The script saves the MIDI file with a dynamic name based on the channel used.
-
